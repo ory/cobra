@@ -54,7 +54,7 @@ Cobra provides:
 * Automatically generated man pages for your application
 * Command aliases so you can change things without breaking them
 * The flexibility to define your own help, usage, etc.
-* Optional tight integration with [viper](http://github.com/spf13/viper) for 12-factor apps
+* Optional tight integration with [viper](http://github.com/ory/viper) for 12-factor apps
 
 # Concepts
 
@@ -88,7 +88,7 @@ have children commands and optionally run an action.
 
 In the example above, 'server' is the command.
 
-[More about cobra.Command](https://godoc.org/github.com/spf13/cobra#Command)
+[More about cobra.Command](https://godoc.org/github.com/ory/cobra/v2#Command)
 
 ## Flags
 
@@ -108,12 +108,12 @@ Using Cobra is easy. First, use `go get` to install the latest version
 of the library. This command will install the `cobra` generator executable
 along with the library and its dependencies:
 
-    go get -u github.com/spf13/cobra/cobra
+    go get -u github.com/ory/cobra/v2/cobra
 
 Next, include Cobra in your application:
 
 ```go
-import "github.com/spf13/cobra"
+import "github.com/ory/cobra/v2"
 ```
 
 # Getting Started
@@ -150,7 +150,7 @@ func main() {
 Cobra provides its own program that will create your application and add any
 commands you want. It's the easiest way to incorporate Cobra into your application.
 
-[Here](https://github.com/spf13/cobra/blob/master/cobra/README.md) you can find more information about it.
+[Here](https://github.com/ory/cobra/v2/blob/master/cobra/README.md) you can find more information about it.
 
 ## Using the Cobra Library
 
@@ -195,8 +195,8 @@ import (
 	"os"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
+	"github.com/ory/cobra/v2"
+	"github.com/ory/viper"
 )
 
 var (
@@ -296,7 +296,7 @@ package cmd
 import (
   "fmt"
 
-  "github.com/spf13/cobra"
+  "github.com/ory/cobra/v2"
 )
 
 func init() {
@@ -363,7 +363,7 @@ command := cobra.Command{
 
 ### Bind Flags with Config
 
-You can also bind your flags with [viper](https://github.com/spf13/viper):
+You can also bind your flags with [viper](https://github.com/ory/viper):
 ```go
 var author string
 
@@ -377,7 +377,7 @@ In this example the persistent flag `author` is bound with `viper`.
 **Note**, that the variable `author` will not be set to the value from config,
 when the `--author` flag is not provided by user.
 
-More in [viper documentation](https://github.com/spf13/viper#working-with-flags).
+More in [viper documentation](https://github.com/ory/viper#working-with-flags).
 
 ### Required flags
 
@@ -442,7 +442,7 @@ import (
   "fmt"
   "strings"
 
-  "github.com/spf13/cobra"
+  "github.com/ory/cobra/v2"
 )
 
 func main() {
@@ -609,7 +609,7 @@ package main
 import (
   "fmt"
 
-  "github.com/spf13/cobra"
+  "github.com/ory/cobra/v2"
 )
 
 func main() {
@@ -741,4 +741,4 @@ Cobra can generate zsh-completion file. Read more about it in
 
 # License
 
-Cobra is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com/spf13/cobra/blob/master/LICENSE.txt)
+Cobra is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com/ory/cobra/v2/blob/master/LICENSE.txt)

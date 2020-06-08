@@ -5,7 +5,7 @@ commands you want. It's the easiest way to incorporate Cobra into your applicati
 
 In order to use the cobra command, compile it using the following command:
 
-    go get github.com/spf13/cobra/cobra
+    go get github.com/ory/cobra/v2/cobra
 
 This will create the cobra executable under your `$GOPATH/bin` directory.
 

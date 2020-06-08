@@ -24,11 +24,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
+	"github.com/ory/cobra/v2"
 	"os"
 {{ if .Viper }}
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/spf13/viper"
+	"github.com/ory/viper"
 {{ end -}}
 )
 
@@ -117,7 +117,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
+	"github.com/ory/cobra/v2"
 )
 
 // {{ .CmdName }}Cmd represents the {{ .CmdName }} command

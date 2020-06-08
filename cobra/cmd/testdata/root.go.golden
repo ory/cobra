@@ -17,11 +17,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
+	"github.com/ory/cobra/v2"
 	"os"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/spf13/viper"
+	"github.com/ory/viper"
 )
 
 var cfgFile string

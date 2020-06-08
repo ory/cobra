@@ -18,7 +18,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
+	"github.com/ory/cobra/v2"
 )
 
 // testCmd represents the test command

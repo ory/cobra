@@ -17,8 +17,8 @@ import (
 	"fmt"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
+	"github.com/ory/cobra/v2"
+	"github.com/ory/viper"
 )
 
 var (

@@ -16,7 +16,7 @@ package doc
 import (
 	"strings"
 
-	"github.com/spf13/cobra"
+	"github.com/ory/cobra/v2"
 )
 
 // Test to see if we have a reason to print See Also information in docs
